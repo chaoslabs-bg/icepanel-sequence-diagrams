@@ -173,7 +173,7 @@ def main(flow_name: str = typer.Option("The name of the flow to create sequence 
     f.close()
     if convert:
         os.system(
-            f"{environ['MMDC_CMD']} -p puppeteer-config.json -i \"{data_dir}/{create_file_name(flow_name, 'mmd')}\" -o \"{data_dir}/{create_file_name(flow_name, export_type.value)}\" -t dark")  # -b transparent
+            f"{environ['MMDC_CMD']} -p puppeteer-config.json -i \"{data_dir}/{create_file_name(flow_name, 'mmd')}\" -o \"{data_dir}/{create_file_name(flow_name, export_type.value)}\"")  # -b transparent
 
 
 # Press the green button in the gutter to run the script.
